@@ -1,0 +1,34 @@
+<body class="scroll">
+    <div class="contenedorRegistro">
+    <form class="formSignup" onsubmit="submitForm(); return false;">
+        <p class="title">Bienvenido </p>
+        <p class="message">Registrate para realizar compras en nuestra tienda </p>
+            <div class="flex">
+            <label>
+                <input class="input" id="nombre" type="text" placeholder="" required="">
+                <span>Nombre</span>
+            </label>
+            <label>
+                <input class="input"  id="apellido" type="text" placeholder="" required="">
+                <span>Apellido</span>
+            </label>
+        </div>      
+            <label>
+            <input class="input" id="edad" type="Number" placeholder="" required="">
+            <span>Edad</span>
+        </label>
+        <label>
+            <input class="input" id="email" type="email" placeholder="" required="">
+            <span>Email</span>
+        </label>  
+        <label>
+            <input class="input" id="password" type="password" placeholder="" required="">
+            <span>Password</span>
+        </label>
+        <button class="submit">Registrarte</button>
+        <p class="signin">¿Ya tienes una cuenta? <a href="/login" class="ingresar">Ingresar</a> </p>
+    </form>
+    </div>
+</body>
+
+<script src="/js/signup.js"></script>

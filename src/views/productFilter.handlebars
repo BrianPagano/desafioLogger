@@ -1,0 +1,33 @@
+
+{{#if user.first_name }}
+    <h1>Bienvenido {{user.first_name}}</h1>
+{{else}}
+    <h1>Bienvenido</h1>
+    <p class="parrafoLoguearse">Por favor iniciar sesión para realizar una compra.</p>
+{{/if}}
+
+<main>
+    <section>
+        <div class='contenedorProducto'> 
+            <div class="card" >
+                <picture>
+                <img src="/img/{{productFilter.thumbnail}}" class="card-img-top" alt={{productFilter.title}}/>
+                </picture>
+                <div class="card-body">
+                    <h3 class="card-title">{{productFilter.title}}</h3>
+                    <p>COD: {{productFilter.code}}</p>
+                    <p class='precioYCant'> 
+                        Precio:${{productFilter.price}} Cantidad:{{productFilter.stock}}
+                    </p>
+                </div>
+                {{#if user.first_name}}
+                <button class="botonAgregarCarrito btn btn2" data-pid="{{pid}}" data-cid="{{user.cart}}">
+                    Agregar al Carrito
+                </button> 
+                {{/if}}
+            </div>
+    </section>
+</main>
+
+
+<script src="/js/products.js"></script>

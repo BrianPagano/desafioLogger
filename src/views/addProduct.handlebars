@@ -1,0 +1,38 @@
+<section>
+    <h1 class="tituloNewProduct">Ingrese el nuevo producto</h1>
+    <form id="productForm" class="formulario" onsubmit="submitForm(); return false;">
+        <div class="mb-1"> 
+        <label for="title" class="form-label">Titulo</label>
+        <input type="text" class="form-control" name="title" id="title" required>
+        </div>
+        <div class="mb-1">
+        <label for="description" class="form-label">Descripcion</label>
+        <input type="text" class="form-control" name="description" id="description" required>
+        </div>
+        <div class="mb-1">
+        <label for="category" class="form-label">Categoria</label>
+        <input type="text" class="form-control" name="category" id="category" required>
+        </div>
+        <div class="mb-1">
+        <label for="price" class="form-label">Precio</label>
+        <input type="number" class="form-control" name="price" id="price" required>
+        </div>
+        <div class="mb-1">
+        <label for="thumbnail" class="form-label">URL de la Imagen </label>
+        <input type="text" class="form-control" name="thumbnail" id="thumbnail" required>
+        </div>
+        <div class="mb-1">
+        <label for="code" class="form-label">Codigo de Producto</label>
+        <input type="text" class="form-control" name="code" id="code" required>
+        </div>
+        <div class="mb-3">
+        <label for="stock" class="form-label">Stock</label>
+        <input type="number" class="form-control" name="stock" id="stock" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+
+
+<script src="/js/addproduct.js"></script>
+

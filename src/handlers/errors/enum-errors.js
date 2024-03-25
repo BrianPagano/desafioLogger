@@ -1,0 +1,10 @@
+const EErrors = { 
+    INVALID_USER_INFO:400,
+    PRODUCT_CREATION_ERROR: 400,
+    NOT_AUTHORIZED:401,
+    NOT_FOUND: 404,
+    INTERNAL_SERVER_ERROR:500,
+    DATABASE_ERROR: 500,
+}
+
+module.exports = EErrors

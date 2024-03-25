@@ -1,0 +1,12 @@
+fatal: Esto es fatal
+error: Esto es error
+fatal: Esto es fatal
+fatal: Esto es fatal
+fatal: Esto es fatal
+error: Esto es error
+error: Error: doc is not defined {"stack":"ReferenceError: doc is not defined\n    at C:\\Users\\u553628\\Desktop\\CoderHouse Full Stack\\Backend\\50000\\DesafioLogger\\src\\controllers\\products.controller.js:23:26\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error: doc is not defined {"stack":"ReferenceError: doc is not defined\n    at C:\\Users\\u553628\\Desktop\\CoderHouse Full Stack\\Backend\\50000\\DesafioLogger\\src\\controllers\\products.controller.js:23:26\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: Error: doc is not defined {"stack":"ReferenceError: doc is not defined\n    at C:\\Users\\u553628\\Desktop\\CoderHouse Full Stack\\Backend\\50000\\DesafioLogger\\src\\controllers\\products.controller.js:23:26\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+fatal: Esto es fatal
+error: Esto es error
+

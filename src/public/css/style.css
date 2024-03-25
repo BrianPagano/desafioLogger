@@ -1,0 +1,716 @@
+/* aplicamos el reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+
+  main {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+  
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerLogin {
+    color:whitesmoke;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.918);
+  }
+
+/*pagina Home de productos*/
+
+ h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+ }
+
+ .parrafoLoguearse{ 
+  text-align: center;
+  font-size: 20px;
+ }
+
+ .botonesPage {
+  display: flex;
+  justify-content: center;
+ }
+
+ .card {
+    width: 14rem;
+  }
+  
+  .card-img-top {
+    height: 17rem;
+  }
+  
+  .precioYCant {
+    font-size: 15px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .btn2 {
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    color: white !important;
+    margin: 0px 40px 10px 40px;
+  }
+  
+  .btn2:hover {
+    color:white !important;
+  }
+
+  /*estilo para las card de los productos*/
+.contenedorProducto {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 40px;
+    gap: 50px;
+    text-align: center;
+    justify-items: center;
+  }
+  @media screen and (min-width: 600px) {
+    .contenedorProducto {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }}
+  @media screen and (min-width: 1024px) {
+  .contenedorProducto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }}
+
+  @media screen and (min-width: 1400px) {
+    .contenedorProducto {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }}
+
+  /*Estilo para Navbar*/
+
+    nav {
+      background-color: rgb(63, 22, 104);
+      padding: 30px;
+    }
+
+    .carrito {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /*Tamaño logo*/
+    .logo {
+        height: 8vw; 
+        max-height: 60px;
+        border-radius: 10px;
+        }
+          
+    
+     @media screen and (min-width: 1024px) {
+        .animacion-menu:hover {
+            transform: scale(1.2);
+            transition: transform .3s; } 
+        
+        .logo {
+            height: 50px; 
+            border-radius: 20px;
+            }
+    } 
+
+  /*Estilo para el carrito del navbar*/
+
+.contenedorCarrito {
+    margin-top: 18px;
+}
+
+.carrito {
+    height: 25px;
+}
+
+.contadorCarrito {
+    color: white;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .contenedorCarrito {
+        margin-top: 0px;
+    }
+}
+
+
+
+  /*Estilos para addProducts*/
+
+  .tituloPage {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section form input {
+    width: 300px !important;
+  }
+
+   /*Estilos para carrito */
+
+   .carritoFinal {
+    display: grid;
+    margin: 0px 20px 10px 20px;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.imgCarrito {
+    width: 40px;
+    height: 60px;
+    border-radius: 10%;
+}
+
+.iconoBasura {
+    border: 0px;
+    background-color: transparent;
+}
+
+.parrafoCarrito {
+    margin: 0px;
+    font-size: 2.5vw;
+}   
+
+.alineadoCarrito {
+  display: grid;
+  margin: 20px 20px 0px 20px;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-items: center;
+  font-size: 200px;
+}
+
+
+.totalPrecio{
+  display: grid;
+  margin: 0px 20px 0px 20px;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  font-weight: 900;
+  align-items: center;
+  justify-items: center;
+}
+
+.totalTexto {
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.tituloCarrito {
+  margin: 0px;
+  font-size: 3vw;
+  text-align: center;
+  font-weight: 700;
+}
+
+.tamañoLinea {
+  margin: 10px 20px 10px 20px;
+}
+
+.bi {
+width: 18px;
+height: 18px;
+}
+
+.contenedorTachito {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(226, 45, 45);
+  border-radius: 4px; 
+}
+
+/*boton cancelar compra*/
+
+.cancelarCompra {
+position: relative;
+background-color: rgb(230, 34, 77);
+border-radius: 5px;
+box-shadow: rgb(167, 23, 76) 0px 4px 0px 0px;
+background-repeat: no-repeat;
+box-sizing: border-box;
+color: #fff;
+border: none;
+padding: 1px;
+font-size: 12px;
+transition: all .3s ease-in-out;
+z-index: 1;
+overflow: hidden;
+}
+
+.cancelarCompra::before {
+content: "";
+background-color: rgb(248, 50, 93);
+width: 0;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+transition: width 700ms ease-in-out;
+display: inline-block;
+}
+
+.cancelarCompra:hover::before {
+width: 100%;
+}
+
+
+/* css para boton iniciar compra*/
+.contenedorCheckout {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.checkout {
+  color: purple;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid purple;
+  padding: 10px 20px;
+  font-size: 2vw;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.checkout:hover {
+  color: white;
+}
+
+.checkout::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: purple;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.checkout:hover::before {
+  width: 160%;
+}
+/*Media querys para ajustar las pantallas de tablet y compu*/
+
+@media screen and (min-width: 600px) {
+  .carritoFinal {
+  margin: 0px 40px 17px 40px;; 
+  }
+
+  .imgCarrito {
+      width: 70px;
+      height: 100px;
+      border-radius: 10%;
+  }
+
+  .parrafoCarrito {
+      font-size: 16px;
+  }
+  .alineadoCarrito {
+    margin: 30px 40px 0px 40px;
+  }
+
+  .tituloCarrito {
+    font-size: 18px;
+  }
+
+ .totalPrecio{
+  margin: 50px 50px 0px 50px;
+  }
+  .totalTexto {
+    font-size: 18px;
+  }
+
+  .tamañoLinea {
+    margin: 10px 50px 15px 50px;
+  }
+
+  .cancelarCompra {
+    font-size: 14px;
+    padding: 2px;
+  }
+
+  .checkout {
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .carritoFinal {
+  margin: 0px 100px 20px 100px; 
+  }
+
+  .imgCarrito {
+      width: 100px;
+      height: 130px;
+      border-radius: 10%;
+  }
+
+  .parrafoCarrito {
+      font-size: 20px;
+  }
+   
+.alineadoCarrito {
+  margin: 50px 100px 0px 100px;
+}
+
+.tituloCarrito {
+  font-size: 22px;
+}
+
+.totalPrecio{
+margin: 50px 100px 0px 100px;
+}
+
+.totalTexto {
+  font-size: 22px;
+}
+
+.tamañoLinea {
+  margin: 10px 150px 20px 150px;
+}
+
+.cancelarCompra {
+  font-size: 18px;
+  padding: 4px;
+}
+
+.checkout {
+  font-size: 20px;
+}
+
+}
+
+
+/* Estilo para sigup/login */ 
+
+.containerLogin {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  height: 100vh;
+  background-image: url("../img/login.jpg");
+  background-size: cover;
+}
+
+.scroll {
+  overflow-y: hidden;
+}
+
+.contenedorRegistro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../img/register.jpg");
+  background-size: cover;
+}
+
+.form {
+  background-color: white;
+  padding: 3.125em;
+  height: 420px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.952);
+}
+
+.altu {
+  height: 350px;
+}
+
+.signup {
+  color: rgb(77, 75, 75);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 1em;
+}
+
+.ingresar, ingresar:hover {
+  text-decoration: none !important;
+}
+
+.form--input {
+  width: 100%;
+  margin-bottom: 1.25em;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 0.8em;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.form--submit {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  background-color: #639;
+  border: 1px dashed #639;
+  cursor: pointer;
+}
+
+.form--submit:hover {
+  color: #639;
+  background-color: white;
+  border: 1px dashed #639;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.displayRegistrate {
+  display: flex;
+  font-size: 13px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotPassword {
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.spanRegistrate {
+  margin-left: 5px;
+  color: #2d79f3;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Estilo para el signup */
+
+.formSignup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  margin: auto; /* Esto centra el formulario horizontalmente */
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 28px;
+  color: #639;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #639;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+  margin: 0px;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.formSignup label {
+  position: relative;
+}
+
+.formSignup label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.formSignup label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.formSignup label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.formSignup label .input:focus + span,.formSignup label .input:valid + span {
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.formSignup label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #639;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(102, 24, 180);
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/*Estilo para el Profile*/
+
+.contenedorProfile {
+  background-image: url(../img/profile2.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.cardProfile {
+  width: 300px;
+  height: 360px;
+  border-radius: 2em;
+  padding: 5px;
+  background-color: #191919;
+  box-shadow: 5px 5px 30px rgb(4, 4, 4),
+                   -5px -5px 30px rgb(57, 57, 57);
+}
+
+.profileimage {
+  background-color: transparent;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5em;
+  width: 100px;
+  height: 100px;
+}
+
+.pfp {
+  border-radius: 35em;
+  fill: white;
+}
+
+.datosProfile {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+/*Estilo para finalizar compra*/
+
+.center {
+  text-align: center;
+  margin-top: 40px;
+}

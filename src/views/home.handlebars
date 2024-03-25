@@ -1,0 +1,47 @@
+
+{{#if user.first_name }}
+    <h1>Bienvenido {{user.first_name}}</h1>
+{{else}}
+    <h1>Bienvenido</h1>
+    <p class="parrafoLoguearse">Por favor iniciar sesión para realizar una compra.</p>
+{{/if}}
+
+<main>
+    <section>
+        <div class='contenedorProducto'> 
+        {{#each products}}
+            <div class="card" >
+                <picture>
+                <img src="/img/{{thumbnail}}" class="card-img-top" alt={{title}}/>
+                </picture>
+                <div class="card-body">
+                    <h3 class="card-title">{{title}}</h3>
+                    <p>COD: {{code}}</p>
+                    <p class='precioYCant'> 
+                        Precio:${{price}} Cantidad:{{stock}}
+                    </p>
+                </div>
+                {{#isEqual ../user.role 'user'}}
+                    <button class="botonAgregarCarrito btn btn2" data-pid="{{_id}}" data-cid="{{../user.cart}}">
+                        Agregar al Carrito
+                    </button> 
+                {{/isEqual}}
+            </div>
+        {{/each}}
+        </div>
+        <div class="botonesPage">
+            {{#if hasPrevPage}}
+                <a href="products?page={{prevPage}}{{#if sort}}&sort={{sort}}{{/if}}{{#if limit}}&limit={{limit}}{{/if}}{{#if category}}&category={{category}}{{/if}}"><button class="btn btn2">Anterior</button></a>
+            {{/if}}
+            {{#if hasNextPage}}
+                <a href="products?page={{nextPage}}{{#if sort}}&sort={{sort}}{{/if}}{{#if limit}}&limit={{limit}}{{/if}}{{#if category}}&category={{category}}{{/if}}"><button class="btn btn2">Siguiente</button></a>
+            {{/if}}
+        </div>
+    </section>
+<footer>
+    <p> Created by Brian Pagano | todos los derechos reservados</p>
+</footer>
+</main>
+
+
+<script src="/js/products.js"></script>
