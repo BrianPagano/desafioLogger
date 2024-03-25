@@ -7,9 +7,9 @@ const calculateSubtotalAndTotal = require('../utils/calculoTotales-Cart.util.js'
 const authorization = require('../middlewares/authorization-middleware.js')
 const NewPurchaseDTO = require('../DTO/new-purchase.dto.js')
 const separateStocks  = require('../utils/separateStocks.util')
-const CustomError = require('../handlers/errors/Custom-Error');
-const TYPES_ERROR = require('../handlers/errors/types.errors');
-const EErrors = require('../handlers/errors/enum-errors');
+const CustomError = require('../handlers/errors/Custom-Error')
+const TYPES_ERROR = require('../handlers/errors/types.errors')
+const EErrors = require('../handlers/errors/enum-errors')
 
 
 //mostrar el carrito elegido

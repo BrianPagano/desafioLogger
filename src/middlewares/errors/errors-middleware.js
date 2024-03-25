@@ -2,7 +2,7 @@ const EErrors = require("../../handlers/errors/enum-errors")
 
 const errorMiddleware = (error, req, res, next) => {
     if (error) {
-        req.logger.error('Error del middleware es:', error.cause)
+        req.logger.error('El error es:', error)
         if (error.code) {
             switch (error.code) {
                 case EErrors.INVALID_USER_INFO:

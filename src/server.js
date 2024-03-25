@@ -6,7 +6,7 @@ const handlebars = require('express-handlebars')
 const mongoConnect = require('./db')
 const chats = []
 const Messages = require ('./DAO/models/messages.model')
-const session = require('express-session');
+const session = require('express-session')
 const initializePassport = require('./configs/passport.config')
 const passport = require('passport')
 const errorMiddleware = require('./middlewares/errors/errors-middleware')
@@ -26,13 +26,13 @@ const hbs = handlebars.create({
 
 // Definición del helper multiply
 hbs.handlebars.registerHelper('multiply', function(a, b) {
-  return a * b;
-});
+  return a * b
+})
 
 // Define helper iqual
 hbs.handlebars.registerHelper('isEqual', function(arg1, arg2, options) {
-  return (arg1 === arg2) ? options.fn(this) : options.inverse(this);
-});
+  return (arg1 === arg2) ? options.fn(this) : options.inverse(this)
+})
 
 app.use(express.json())
 app.use(express.static(process.cwd() + '/src/public'))
@@ -60,7 +60,7 @@ const httpServer = app.listen(port, () => {
   console.log(`Server running at port ${port}`)
 })
 
-const io = new Server(httpServer);
+const io = new Server(httpServer)
 
 io.on ('connection', (socket) => {  
   socket.on('newUser', data => {

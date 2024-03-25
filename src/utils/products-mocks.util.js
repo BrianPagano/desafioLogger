@@ -5,7 +5,7 @@ const generateProducts = () => {
     for (let i=0; i<100; i++) {
         products.push(generateProduct())
     }
-    return products;
+    return products
 }
 
 const generateProduct = () => {

@@ -16,14 +16,14 @@ function submitForm() {
     .then(response => response.json())
     .then(responseData => {
         if (responseData.status === 'Success') { // Verifica si devuelve success
-            window.location.href = '/login'; // Redirecciona solo si fue exitoso el reset
+            window.location.href = '/login' // Redirecciona solo si fue exitoso el reset
         } else {
             console.log("Error al restaurar la clave")
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
                 text: "Email incorrecto",
-              });
+              })
         }
     })
     .catch(error => console.error('Error:', error))

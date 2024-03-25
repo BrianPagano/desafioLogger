@@ -16,7 +16,7 @@ const cartsSchema = new mongoose.Schema({
         default: 1,
       },
     }],
-  });
+  })
 
 const Carts = mongoose.model(cartsCollection, cartsSchema)
 

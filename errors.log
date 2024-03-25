@@ -10,3 +10,5 @@ error: Error: doc is not defined {"stack":"ReferenceError: doc is not defined\n 
 fatal: Esto es fatal
 error: Esto es error
 
+error: El error es: error is not defined {"stack":"ReferenceError: error is not defined\n    at Strategy._verify (C:\\Users\\u553628\\Desktop\\CoderHouse Full Stack\\Backend\\50000\\DesafioLogger\\src\\configs\\passport.config.js:44:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+error: El error es: error is not defined {"stack":"ReferenceError: error is not defined\n    at Strategy._verify (C:\\Users\\u553628\\Desktop\\CoderHouse Full Stack\\Backend\\50000\\DesafioLogger\\src\\configs\\passport.config.js:44:32)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}

@@ -19,7 +19,7 @@ const initializePassport = () => {
         try {
         const user = await Users.findOne ({email: username})
         if(user) {
-            req.logger.warning ('el correo ya se encuentra registrado')
+            console.log ('el correo ya se encuentra registrado')
             return done (null, false)
         }
 
@@ -36,11 +36,11 @@ const initializePassport = () => {
         try {
             const user = await Users.findOne({ email: username })
         if (!user) {
-            req.logger.warning ('Usuario o contraseña incorrecta')
+            console.error ('Usuario o contraseña incorrecta')
             return done (null, false)
         }
         if (!useValidPassword (user, password)) {
-            req.logger.warning ('Usuario o contraseña incorrecta')
+            console.error ('Usuario o contraseña incorrecta')
             return done (null, error)            
         }
         return done (null, user)
@@ -69,10 +69,10 @@ const initializePassport = () => {
                 user = await Users.create(newUserInfo)
             }
     
-            req.logger.info ('Usuario actualizado con éxito:', user)
+            console.log ('Usuario actualizado con éxito:', user)
             done(null, user)
         } catch (error) {
-            req.logger.error ('error', error)
+            console.error ('error', error)
             done(error) // Manejamos errores
         }
     }))

@@ -20,7 +20,7 @@ router.get ('/user-cart', async (req, res, next) => {
                     cause: 'No estás autenticado',
                     message: 'No estás autenticado',
                     code: EErrors.NOT_AUTHORIZED,
-                });
+                })
             }
             const uid = req.user._id
             const userCart = await UserService.getUserCart(uid)

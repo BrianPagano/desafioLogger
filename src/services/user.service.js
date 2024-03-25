@@ -22,13 +22,13 @@ async function updateUserCart(uid, cid) {
 }
 async function createUser(newUserDto) {
     try {
-        const createdUser = await User.createUser(newUserDto);
+        const createdUser = await User.createUser(newUserDto)
         //aca va el adapter
         messageManager.sendMessage(createdUser)
-        return createdUser;
+        return createdUser
     } catch (error) {
-        console.error('Error al crear un usuario:', error);
-        throw new Error('Error al crear un usuario');
+        console.error('Error al crear un usuario:', error)
+        throw new Error('Error al crear un usuario')
     }
 }
 
